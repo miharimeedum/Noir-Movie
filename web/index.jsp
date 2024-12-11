@@ -21,7 +21,7 @@
           background-position: center;">
         <header>
             <input type ="checkbox" name ="" id ="chk1">
-            <div class="logo"><h1>Web Master</h1></div>
+            <div class="logo"><img src="img/logo.png" width="100%"></div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Product</a></li>
