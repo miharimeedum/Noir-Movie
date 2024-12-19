@@ -28,9 +28,11 @@ This is a cinema ticket booking system for **Cinematic Noir**, built using JSP, 
    [Tomcat 9 Downloads](https://tomcat.apache.org/download-90.cgi)
 3. Download and Install Apache NetBeans IDE 23
    [Netbeans Downloads] https://netbeans.apache.org/front/main/download/nb23/
-4. Download and Install git fork:
+4. Download and Install MySQL 8.2.12
+   [Download link] https://downloads.mysql.com/archives/community/?version=5.5.41
+5. Download and Install git fork:
    [Download Fork] https://git-fork.com/
-5. Clone this repository:
+6. Clone this repository:
    ```bash
    git clone https://github.com/miharimeedum/Noir-Movie.git
 
