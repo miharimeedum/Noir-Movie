@@ -1,6 +1,11 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
+ */
 package com.meedum;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.ServletException;
@@ -35,8 +40,6 @@ public class RegisterServlet extends HttpServlet {
         String password = request.getParameter("psw2");
         String rePassword = request.getParameter("repsw2");
         
-        System.out.println("User Destils = {fname:"+fname+",lname:"+lname+",email:"+contactno+",username:"+username+",password:"+password+",repassword:"+rePassword+"}");
-        
         if (password.equals(rePassword)) {
             for (UserManager usr : users.values()) {
                 if (email.equals(usr.getEmail())) {
@@ -57,7 +60,6 @@ public class RegisterServlet extends HttpServlet {
             user.setUsername(username);
             users.put(email, user);
             HttpSession session = request.getSession();
-            System.out.println("New user added");
             session.setAttribute("uname", username);
             response.sendRedirect("home.jsp");
         } else {
