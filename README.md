@@ -1,4 +1,4 @@
-# Cinematic Noir - Cinema Ticket Booking System
+# Noir_Movie - Cinema Ticket Booking System
 
 This is a cinema ticket booking system for **Cinematic Noir**, built using JSP, Servlets, and J2EE 8. The project is designed to handle online ticket bookings, showcasing features like movie listings, seat selection, and payment processing.
 
@@ -12,9 +12,12 @@ This is a cinema ticket booking system for **Cinematic Noir**, built using JSP, 
 - **Backend:** Java 22, J2EE 8
 - **Frontend:** HTML5, CSS3, JavaScript, JSP
 - **Server:** Apache Tomcat 9
+- **IDE:** Apache NetBeans IDE 23
 
 ## Payment Gateway
 - Powered by Paypal sand box
+  Developer guide by Paypal
+   [Paypal Sandbox] (https://developer.paypal.com/tools/sandbox/accounts/)
 
 ## Installation
 
@@ -23,8 +26,11 @@ This is a cinema ticket booking system for **Cinematic Noir**, built using JSP, 
    [Oracle Java 22 Downloads](https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html)
 2. Download and set up Apache Tomcat 9:
    [Tomcat 9 Downloads](https://tomcat.apache.org/download-90.cgi)
-3. Developer guide by Paypal
-   [Paypal Sandbox] (https://developer.paypal.com/tools/sandbox/accounts/)
-4. Clone this repository:
+3. Download and Install Apache NetBeans IDE 23
+   [Netbeans Downloads] https://netbeans.apache.org/front/main/download/nb23/
+4. Download and Install git fork:
+   [Download Fork] https://git-fork.com/
+5. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/cinematic-noir.git
+   git clone https://github.com/miharimeedum/Noir-Movie.git
+
