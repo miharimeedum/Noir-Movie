@@ -17,7 +17,7 @@ This is a cinema ticket booking system for **Cinematic Noir**, built using JSP, 
 ## Payment Gateway
 - Powered by Paypal sand box
   Developer guide by Paypal
-   [Paypal Sandbox] (https://developer.paypal.com/tools/sandbox/accounts/)
+   [Paypal Sandbox](https://developer.paypal.com/tools/sandbox/accounts/)
 
 ## Installation
 
@@ -27,15 +27,15 @@ This is a cinema ticket booking system for **Cinematic Noir**, built using JSP, 
 2. Download and set up Apache Tomcat 9:
    [Tomcat 9 Downloads](https://tomcat.apache.org/download-90.cgi)
 3. Download and Install Apache NetBeans IDE 23
-   [Netbeans Downloads] https://netbeans.apache.org/front/main/download/nb23/
+   [Netbeans Downloads](https://netbeans.apache.org/front/main/download/nb23/)
 4. Download and Install MySQL 8.2.12
-   [Download link] https://downloads.mysql.com/archives/community/?version=5.5.41
+   [Download link](https://downloads.mysql.com/archives/community/?version=5.5.41)
 5. Download and Install git fork:
-   [Download Fork] https://git-fork.com/
+   [Download Fork](https://git-fork.com/)
 6. Clone this repository:
    ```bash
    git clone https://github.com/miharimeedum/Noir-Movie.git
-7. Download Connector/J 8.0.28
-   [Download jar] https://dev.mysql.com/downloads/connector/j/
+7. Download Connector/J 9.1.0
+   [Download jar](https://dev.mysql.com/downloads/connector/j/)
 
 
