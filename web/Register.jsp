@@ -10,11 +10,11 @@
 <head>
     <title>Noir-Movie | Register</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-    <form>
+    <form action="RegisterServlet" method="post">
         <h3 class="title">Customer Register</h3>
 
         <label for="firstname" class="label">First Name</label>

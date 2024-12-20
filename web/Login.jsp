@@ -10,10 +10,10 @@
 
     <title>Noir-Movie | Log in</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <form>
+    <form action="LoginServlet" method="post">
         <h3 class="title">Login Here</h3>
 
         <label for="username" class="label">Username</label>
