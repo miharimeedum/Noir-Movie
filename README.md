@@ -35,4 +35,7 @@ This is a cinema ticket booking system for **Cinematic Noir**, built using JSP, 
 6. Clone this repository:
    ```bash
    git clone https://github.com/miharimeedum/Noir-Movie.git
+7. Download Connector/J 8.0.28
+   [Download jar] https://dev.mysql.com/downloads/connector/j/
+
 
