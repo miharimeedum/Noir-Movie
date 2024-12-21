@@ -1,5 +1,5 @@
 <!--
-    Document   : Register
+    Document   : register
     Created on : Dec 12, 2024, 00:10:56 AM
     Author     : miharimeedum
 -->
@@ -39,6 +39,8 @@
         <input type="text" placeholder="Re type password" id="repassword" name="repassword" required />
 
         <input type="submit" value="Register" class="submitbutton" />
+        <p class="label">Already have an account? <a href="login.jsp">Login Here</a></p>
+
     </form>
 </body>
 

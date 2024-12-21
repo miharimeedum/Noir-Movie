@@ -1,12 +1,11 @@
 package com.meedum;
 
+import dao.JDBCConnection;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
@@ -86,15 +85,13 @@ public class RegisterServlet extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("username", username);
                 
-                RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-                rd.forward(request, response);
+                response.sendRedirect("index.jsp");
             } catch (SQLException ex) {
                 Logger.getLogger(RegisterServlet.class.getName()).log(Level.SEVERE, null, ex);
             }
         } else {
             System.out.println("Passwords are not matched");
-            RequestDispatcher rd = request.getRequestDispatcher("Register.jsp?re=2");
-            rd.forward(request, response);
+            response.sendRedirect("index.jsp?re=2");
         }
     }
     

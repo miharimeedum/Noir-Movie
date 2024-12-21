@@ -1,5 +1,6 @@
 package com.meedum;
 
+import dao.JDBCConnection;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -29,23 +30,26 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String username = request.getParameter("uname1");
-        String password = request.getParameter("psw1");
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
         Connection conn = JDBCConnection.getConnection();
         try {
             PreparedStatement ps = conn.prepareStatement("select * from user where username=? and password=?");
             ps.setString(1, username);
             ps.setString(2, password);
             ResultSet rs = ps.executeQuery();
-            JDBCConnection.connectionClose(conn);
+            System.out.println("SQL : " + ps);
+            System.out.println("Result Set : " + rs);
             if (rs.next()) {
                 HttpSession session = request.getSession();
                 session.setAttribute("username", username);
                 System.out.println("Login sucessfully, " + username);
+                JDBCConnection.connectionClose(conn);
                 response.sendRedirect("index.jsp");
             } else {
-                System.out.println("Login Failed");
-                RequestDispatcher rd = request.getRequestDispatcher("index.jsp?re=1");
+                JDBCConnection.connectionClose(conn);
+                request.setAttribute("errorMessage", "Invalid username or password!");
+                RequestDispatcher rd = request.getRequestDispatcher("Login.jsp?re=1");
                 rd.forward(request, response);
             }
         } catch (SQLException ex) {

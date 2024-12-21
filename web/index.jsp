@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page session="true" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +27,7 @@
                         <a class="nav-link" href="booking.html">Movies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active btn btn-warning" href="#">Buy a Ticket</a>
+                        <a class="nav-link active btn btn-warning" href="#show-now">Buy a Ticket</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="booking.html">Cinema</a>
@@ -44,13 +45,16 @@
                         <a class="nav-link" href="booking.html"><i class="fa fa-user"></i> <%=username %></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="booking.html"><i class="fa fa-sign-out"></i></a>
+                        <a class="nav-link" href="logout.jsp"><i class="fa fa-sign-out"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.jsp"><i class="fa fa-dashboard"></i></a>
                     </li>
                     <%
                     } else {
                     %>
                     <li class="nav-item">
-                        <a class="nav-link" href="Login.jsp"><i class="fa fa-sign-in"></i> Login</a>
+                        <a class="nav-link" href="login.jsp"><i class="fa fa-sign-in"></i> Login</a>
                     </li>
                     <%
                     }
@@ -65,10 +69,10 @@
             <h1 style="background-color: transparent;">🎬 Your Front-Row Seat to Entertainment Awaits!</h1>
             <p style="background-color: transparent;">Discover the latest blockbusters and timeless classics. Book your
                 tickets now and make every movie night unforgettable!</p>
-            <a href="booking.html" class="btn btn-warning">Buy a Ticket</a>
+            <a href="#show-now" class="btn btn-warning">Buy a Ticket</a>
             <a href="#" class="btn btn-secondary">More Info</a>
         </div>
-        <div class="row movie">
+        <div class="row movie" id="show-now">
             <hr />
             <div class="col col-md-12">
                 <h3>Show Now</h3>

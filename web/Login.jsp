@@ -1,5 +1,5 @@
 <!-- 
-    Document   : Login
+    Document   : login
     Created on : Dec 11, 2024, 11:07:47 PM
     Author     : miharimeedum 
 -->
@@ -23,6 +23,8 @@
         <input type="password" placeholder="Enter your Password" id="password" name="password" required />
 
         <input type="submit" value="Log in" class="submitbutton" />
+        <p class="label">Don't have an account? <a href="register.jsp">Register Here</a></p>
+
     </form>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
